@@ -1,0 +1,21 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: nodejs-alert
+  namespace: monitoring
+  labels:
+    release: prometheus
+spec:
+  groups:
+    - name: nodejs-security-alert
+      rules:
+        - alert: HighRequestRate
+          # Detect abnormal request spike (possible DoS)
+          expr: rate(http_requests_root_total[1m]) > 20
+          for: 1m
+          labels:
+            severity: warning
+          annotations:
+            summary: "High request rate detected"
+            description: "Possible application-layer DoS activity"
+

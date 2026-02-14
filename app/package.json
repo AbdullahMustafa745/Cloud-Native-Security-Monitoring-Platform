@@ -1,0 +1,16 @@
+{
+  "name": "secure-nodejs-monitoring",
+  "version": "1.0.0",
+  "description": "NodeJS application with Prometheus metrics for Kubernetes monitoring and anomaly detection",
+  "main": "index.js",
+  "author": "Abdullah Mustafa",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "prom-client": "^14.0.0"
+  }
+}
+

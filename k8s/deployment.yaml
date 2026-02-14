@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: secure-nodejs
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nodejs
+  template:
+    metadata:
+      labels:
+        app: nodejs
+    spec:
+      containers:
+        - name: nodejs
+          image: yourdockerhub/secure-nodejs:v1
+          ports:
+            - containerPort: 3000
+          # Basic resource limits (prevents abuse)
+          resources:
+            limits:
+              cpu: "500m"
+              memory: "256Mi"
+          # Security hardening
+          securityContext:
+            runAsNonRoot: true
+            allowPrivilegeEscalation: false
+
