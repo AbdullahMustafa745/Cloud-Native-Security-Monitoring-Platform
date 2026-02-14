@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # -------------------------------------------------------
-# DoS Simulation Script
+# DoS Simulation Attack Script
 # Sends continuous HTTP requests to simulate high traffic
 # Used to test Prometheus alert detection
 # -------------------------------------------------------

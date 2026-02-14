@@ -1,4 +1,4 @@
-# Cloud-Native Monitoring & Anomaly Detection
+# Cloud-Native Monitoring & Anomaly Detection Platform 
 
 This project demonstrates:
 

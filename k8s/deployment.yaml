@@ -17,7 +17,7 @@ spec:
           image: yourdockerhub/secure-nodejs:v1
           ports:
             - containerPort: 3000
-          # Basic resource limits (prevents abuse)
+          # Basic resource limits 
           resources:
             limits:
               cpu: "500m"

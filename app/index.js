@@ -1,6 +1,6 @@
 /*
   Secure NodeJS Application with Prometheus Monitoring
-  ----------------------------------------------------
+
   - Exposes application metrics at /metrics
   - Tracks total HTTP requests to root endpoint
   - Used for anomaly detection (e.g., DoS simulation)

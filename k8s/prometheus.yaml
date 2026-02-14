@@ -10,7 +10,7 @@ spec:
     - name: nodejs-security-alert
       rules:
         - alert: HighRequestRate
-          # Detect abnormal request spike (possible DoS)
+          # Detect abnormal request spike (possible DoS attack)
           expr: rate(http_requests_root_total[1m]) > 20
           for: 1m
           labels:

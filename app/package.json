@@ -1,5 +1,5 @@
 {
-  "name": "secure-nodejs-monitoring",
+  "name": "secure-nodejs-monitoring-platform",
   "version": "1.0.0",
   "description": "NodeJS application with Prometheus metrics for Kubernetes monitoring and anomaly detection",
   "main": "index.js",

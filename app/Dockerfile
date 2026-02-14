@@ -12,7 +12,7 @@ RUN npm install --only=production
 # Copy application code
 COPY index.js .
 
-# Create non-root user (security best practice)
+# Create non-root user 
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 
 # Switch to non-root user
